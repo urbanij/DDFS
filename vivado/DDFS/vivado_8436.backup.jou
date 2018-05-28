@@ -1,0 +1,84 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Thu May 24 16:05:03 2018
+# Process ID: 8436
+# Current directory: C:/Users/fu/Dropbox/UNI/MASTER/1M/PSM/DIGITALE/2018_vhdl/2-DDFS/vivado/DDFS
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8748 C:\Users\fu\Dropbox\UNI\MASTER\1M\PSM\DIGITALE\2018_vhdl\2-DDFS\vivado\DDFS\DDFS.xpr
+# Log file: C:/Users/fu/Dropbox/UNI/MASTER/1M/PSM/DIGITALE/2018_vhdl/2-DDFS/vivado/DDFS/vivado.log
+# Journal file: C:/Users/fu/Dropbox/UNI/MASTER/1M/PSM/DIGITALE/2018_vhdl/2-DDFS/vivado/DDFS\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/fu/Dropbox/UNI/MASTER/1M/PSM/DIGITALE/2018_vhdl/2-DDFS/vivado/DDFS/DDFS.xpr
+add_files -norecurse {C:/Users/fu/Dropbox/UNI/MASTER/1M/PSM/DIGITALE/2018_vhdl/2-DDFS/src/DDFS.vhd C:/Users/fu/Dropbox/UNI/MASTER/1M/PSM/DIGITALE/2018_vhdl/2-DDFS/src/LUT_DDFS_SG_4096x6.vhd C:/Users/fu/Dropbox/UNI/MASTER/1M/PSM/DIGITALE/2018_vhdl/2-DDFS/src/DDFS_wrapper.vhd C:/Users/fu/Dropbox/UNI/MASTER/1M/PSM/DIGITALE/2018_vhdl/2-DDFS/src/dff.vhd C:/Users/fu/Dropbox/UNI/MASTER/1M/PSM/DIGITALE/2018_vhdl/2-DDFS/src/fa.vhd C:/Users/fu/Dropbox/UNI/MASTER/1M/PSM/DIGITALE/2018_vhdl/2-DDFS/src/reg.vhd C:/Users/fu/Dropbox/UNI/MASTER/1M/PSM/DIGITALE/2018_vhdl/2-DDFS/src/rca.vhd C:/Users/fu/Dropbox/UNI/MASTER/1M/PSM/DIGITALE/2018_vhdl/2-DDFS/src/PhaseAccumulator.vhd}
+synth_design -rtl -name rtl_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+close_design
+open_run synth_1 -name synth_1
+create_clock -period 8.000 -name PL_clk_125 -waveform {0.000 4.000} [get_port_clk]
+create_clock -period 8.000 -name PL_clk_125 -waveform {0.000 4.000} clk
+file mkdir C:/Users/fu/Dropbox/UNI/MASTER/1M/PSM/DIGITALE/2018_vhdl/2-DDFS/vivado/DDFS/DDFS.srcs/constrs_1/new
+close [ open C:/Users/fu/Dropbox/UNI/MASTER/1M/PSM/DIGITALE/2018_vhdl/2-DDFS/vivado/DDFS/DDFS.srcs/constrs_1/new/DDFS_Zybo_constraints.xdc w ]
+add_files -fileset constrs_1 C:/Users/fu/Dropbox/UNI/MASTER/1M/PSM/DIGITALE/2018_vhdl/2-DDFS/vivado/DDFS/DDFS.srcs/constrs_1/new/DDFS_Zybo_constraints.xdc
+set_property target_constrs_file C:/Users/fu/Dropbox/UNI/MASTER/1M/PSM/DIGITALE/2018_vhdl/2-DDFS/vivado/DDFS/DDFS.srcs/constrs_1/new/DDFS_Zybo_constraints.xdc [current_fileset -constrset]
+save_constraints -force
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -name timing_1
+set_property package_pin "" [get_ports [list  {fw[3]}]]
+place_ports {fw[3]} M14
+place_ports {fw[2]} M15
+place_ports {fw[1]} G14
+place_ports {fw[3]} D18
+place_ports {fw[3]} T16
+place_ports {fw[2]} W13
+place_ports {fw[1]} P15
+place_ports {fw[0]} G15
+set_property is_loc_fixed false [get_ports [list  {led[3]}]]
+place_ports {led[3]} D18
+place_ports {led[2]} G14
+place_ports {led[1]} M15
+place_ports {led[0]} M14
+place_ports {yq[5]} F20
+place_ports {yq[4]} H20
+place_ports {yq[3]} J19
+place_ports {yq[2]} L19
+place_ports {yq[1]} N20
+place_ports {yq[0]} H18
+place_ports clk L16
+place_ports reset R18
+set_property IOSTANDARD LVCMOS33 [get_ports [list {fw[3]} {fw[2]} {fw[1]} {fw[0]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {led[3]} {led[2]} {led[1]} {led[0]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {yq[5]} {yq[4]} {yq[3]} {yq[2]} {yq[1]} {yq[0]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list clk]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list reset]]
+save_constraints -force
+reset_run synth_1
+launch_runs impl_1 -jobs 2
+wait_on_run impl_1
+close_design
+open_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+disconnect_hw_server localhost:3121
+disconnect_hw_server localhost:3121
+connect_hw_server
+open_hw_target
+disconnect_hw_server localhost:3121
+connect_hw_server
+open_hw_target
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7z010_1] 0]
+set_property PROGRAM.FILE {C:/Users/fu/Dropbox/UNI/MASTER/1M/PSM/DIGITALE/2018_vhdl/2-DDFS/vivado/DDFS/DDFS.runs/impl_1/DDFS_WRAPPER.bit} [lindex [get_hw_devices xc7z010_1] 0]
+program_hw_devices [lindex [get_hw_devices xc7z010_1] 0]
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7z010_1] 0]
+set_property PROGRAM.FILE {C:/Users/fu/Dropbox/UNI/MASTER/1M/PSM/DIGITALE/2018_vhdl/2-DDFS/vivado/DDFS/DDFS.runs/impl_1/DDFS_WRAPPER.bit} [lindex [get_hw_devices xc7z010_1] 0]
+program_hw_devices [lindex [get_hw_devices xc7z010_1] 0]
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]

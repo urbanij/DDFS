@@ -1,0 +1,650 @@
+$date
+  Thu May 17 20:54:38 2018
+$end
+$version
+  GHDL v0
+$end
+$timescale
+  1 fs
+$end
+$var reg 1 ! clk_ext $end
+$var reg 1 " reset $end
+$var reg 12 # d_in[11:0] $end
+$var reg 1 $ testing $end
+$scope module i_dut $end
+$var reg 1 % clk $end
+$var reg 1 & rst $end
+$var reg 12 ' d[11:0] $end
+$var reg 12 ( q[11:0] $end
+$scope module reg_gen(0) $end
+$scope module i_dff $end
+$var reg 1 ) clk_dff $end
+$var reg 1 * rst_dff $end
+$var reg 1 + d_dff $end
+$var reg 1 , q_dff $end
+$upscope $end
+$upscope $end
+$scope module reg_gen(1) $end
+$scope module i_dff $end
+$var reg 1 - clk_dff $end
+$var reg 1 . rst_dff $end
+$var reg 1 / d_dff $end
+$var reg 1 0 q_dff $end
+$upscope $end
+$upscope $end
+$scope module reg_gen(2) $end
+$scope module i_dff $end
+$var reg 1 1 clk_dff $end
+$var reg 1 2 rst_dff $end
+$var reg 1 3 d_dff $end
+$var reg 1 4 q_dff $end
+$upscope $end
+$upscope $end
+$scope module reg_gen(3) $end
+$scope module i_dff $end
+$var reg 1 5 clk_dff $end
+$var reg 1 6 rst_dff $end
+$var reg 1 7 d_dff $end
+$var reg 1 8 q_dff $end
+$upscope $end
+$upscope $end
+$scope module reg_gen(4) $end
+$scope module i_dff $end
+$var reg 1 9 clk_dff $end
+$var reg 1 : rst_dff $end
+$var reg 1 ; d_dff $end
+$var reg 1 < q_dff $end
+$upscope $end
+$upscope $end
+$scope module reg_gen(5) $end
+$scope module i_dff $end
+$var reg 1 = clk_dff $end
+$var reg 1 > rst_dff $end
+$var reg 1 ? d_dff $end
+$var reg 1 @ q_dff $end
+$upscope $end
+$upscope $end
+$scope module reg_gen(6) $end
+$scope module i_dff $end
+$var reg 1 A clk_dff $end
+$var reg 1 B rst_dff $end
+$var reg 1 C d_dff $end
+$var reg 1 D q_dff $end
+$upscope $end
+$upscope $end
+$scope module reg_gen(7) $end
+$scope module i_dff $end
+$var reg 1 E clk_dff $end
+$var reg 1 F rst_dff $end
+$var reg 1 G d_dff $end
+$var reg 1 H q_dff $end
+$upscope $end
+$upscope $end
+$scope module reg_gen(8) $end
+$scope module i_dff $end
+$var reg 1 I clk_dff $end
+$var reg 1 J rst_dff $end
+$var reg 1 K d_dff $end
+$var reg 1 L q_dff $end
+$upscope $end
+$upscope $end
+$scope module reg_gen(9) $end
+$scope module i_dff $end
+$var reg 1 M clk_dff $end
+$var reg 1 N rst_dff $end
+$var reg 1 O d_dff $end
+$var reg 1 P q_dff $end
+$upscope $end
+$upscope $end
+$scope module reg_gen(10) $end
+$scope module i_dff $end
+$var reg 1 Q clk_dff $end
+$var reg 1 R rst_dff $end
+$var reg 1 S d_dff $end
+$var reg 1 T q_dff $end
+$upscope $end
+$upscope $end
+$scope module reg_gen(11) $end
+$scope module i_dff $end
+$var reg 1 U clk_dff $end
+$var reg 1 V rst_dff $end
+$var reg 1 W d_dff $end
+$var reg 1 X q_dff $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+0!
+0"
+b000000000111 #
+1$
+0%
+0&
+b000000000111 '
+bUUUUUUUUUUUU (
+0)
+0*
+1+
+U,
+0-
+0.
+1/
+U0
+01
+02
+13
+U4
+05
+06
+07
+U8
+09
+0:
+0;
+U<
+0=
+0>
+0?
+U@
+0A
+0B
+0C
+UD
+0E
+0F
+0G
+UH
+0I
+0J
+0K
+UL
+0M
+0N
+0O
+UP
+0Q
+0R
+0S
+UT
+0U
+0V
+0W
+UX
+#10000000
+1!
+1%
+b000000000111 (
+1)
+1,
+1-
+10
+11
+14
+15
+08
+19
+0<
+1=
+0@
+1A
+0D
+1E
+0H
+1I
+0L
+1M
+0P
+1Q
+0T
+1U
+0X
+#20000000
+0!
+0%
+0)
+0-
+01
+05
+09
+0=
+0A
+0E
+0I
+0M
+0Q
+0U
+#30000000
+1!
+1%
+1)
+1-
+11
+15
+19
+1=
+1A
+1E
+1I
+1M
+1Q
+1U
+#40000000
+0!
+0%
+0)
+0-
+01
+05
+09
+0=
+0A
+0E
+0I
+0M
+0Q
+0U
+#50000000
+1!
+b000000000001 #
+1%
+b000000000001 '
+1)
+1-
+0/
+11
+03
+15
+19
+1=
+1A
+1E
+1I
+1M
+1Q
+1U
+#52000000
+1"
+1&
+b000000000000 (
+1*
+0,
+1.
+00
+12
+04
+16
+1:
+1>
+1B
+1F
+1J
+1N
+1R
+1V
+#60000000
+0!
+0%
+0)
+0-
+01
+05
+09
+0=
+0A
+0E
+0I
+0M
+0Q
+0U
+#70000000
+1!
+1%
+1)
+1-
+11
+15
+19
+1=
+1A
+1E
+1I
+1M
+1Q
+1U
+#71000000
+0"
+0&
+0*
+0.
+02
+06
+0:
+0>
+0B
+0F
+0J
+0N
+0R
+0V
+#80000000
+0!
+0%
+0)
+0-
+01
+05
+09
+0=
+0A
+0E
+0I
+0M
+0Q
+0U
+#90000000
+1!
+1%
+b000000000001 (
+1)
+1,
+1-
+11
+15
+19
+1=
+1A
+1E
+1I
+1M
+1Q
+1U
+#93000000
+b000000000111 #
+b000000000111 '
+1/
+13
+#100000000
+0!
+0%
+0)
+0-
+01
+05
+09
+0=
+0A
+0E
+0I
+0M
+0Q
+0U
+#110000000
+1!
+1%
+b000000000111 (
+1)
+1-
+10
+11
+14
+15
+19
+1=
+1A
+1E
+1I
+1M
+1Q
+1U
+#120000000
+0!
+0%
+0)
+0-
+01
+05
+09
+0=
+0A
+0E
+0I
+0M
+0Q
+0U
+#130000000
+1!
+1%
+1)
+1-
+11
+15
+19
+1=
+1A
+1E
+1I
+1M
+1Q
+1U
+#140000000
+0!
+0%
+0)
+0-
+01
+05
+09
+0=
+0A
+0E
+0I
+0M
+0Q
+0U
+#150000000
+1!
+1%
+1)
+1-
+11
+15
+19
+1=
+1A
+1E
+1I
+1M
+1Q
+1U
+#160000000
+0!
+0%
+0)
+0-
+01
+05
+09
+0=
+0A
+0E
+0I
+0M
+0Q
+0U
+#170000000
+1!
+1%
+1)
+1-
+11
+15
+19
+1=
+1A
+1E
+1I
+1M
+1Q
+1U
+#180000000
+0!
+0%
+0)
+0-
+01
+05
+09
+0=
+0A
+0E
+0I
+0M
+0Q
+0U
+#190000000
+1!
+1%
+1)
+1-
+11
+15
+19
+1=
+1A
+1E
+1I
+1M
+1Q
+1U
+#193000000
+#200000000
+0!
+0%
+0)
+0-
+01
+05
+09
+0=
+0A
+0E
+0I
+0M
+0Q
+0U
+#210000000
+1!
+1%
+1)
+1-
+11
+15
+19
+1=
+1A
+1E
+1I
+1M
+1Q
+1U
+#220000000
+0!
+0%
+0)
+0-
+01
+05
+09
+0=
+0A
+0E
+0I
+0M
+0Q
+0U
+#230000000
+1!
+1%
+1)
+1-
+11
+15
+19
+1=
+1A
+1E
+1I
+1M
+1Q
+1U
+#233000000
+b000110000111 #
+b000110000111 '
+1G
+1K
+#240000000
+0!
+0%
+0)
+0-
+01
+05
+09
+0=
+0A
+0E
+0I
+0M
+0Q
+0U
+#250000000
+1!
+1%
+b000110000111 (
+1)
+1-
+11
+15
+19
+1=
+1A
+1E
+1H
+1I
+1L
+1M
+1Q
+1U
+#260000000
+0!
+0%
+0)
+0-
+01
+05
+09
+0=
+0A
+0E
+0I
+0M
+0Q
+0U
+#266000000
+0$
+#270000000
+1!
+1%
+1)
+1-
+11
+15
+19
+1=
+1A
+1E
+1I
+1M
+1Q
+1U

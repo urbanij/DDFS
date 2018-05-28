@@ -1,0 +1,376 @@
+$date
+  Thu May 17 20:54:37 2018
+$end
+$version
+  GHDL v0
+$end
+$timescale
+  1 fs
+$end
+$var reg 1 ! c $end
+$var reg 12 " x_ext[11:0] $end
+$var reg 12 # y_ext[11:0] $end
+$scope module dut $end
+$var reg 12 $ x[11:0] $end
+$var reg 12 % y[11:0] $end
+$var reg 1 & c0 $end
+$var reg 12 ' s[11:0] $end
+$var reg 1 ( cn $end
+$var reg 13 ) c[12:0] $end
+$scope module gen_rca(0) $end
+$scope module i_fa $end
+$var reg 1 * x $end
+$var reg 1 + y $end
+$var reg 1 , cin $end
+$var reg 1 - s $end
+$var reg 1 . cout $end
+$upscope $end
+$upscope $end
+$scope module gen_rca(1) $end
+$scope module i_fa $end
+$var reg 1 / x $end
+$var reg 1 0 y $end
+$var reg 1 1 cin $end
+$var reg 1 2 s $end
+$var reg 1 3 cout $end
+$upscope $end
+$upscope $end
+$scope module gen_rca(2) $end
+$scope module i_fa $end
+$var reg 1 4 x $end
+$var reg 1 5 y $end
+$var reg 1 6 cin $end
+$var reg 1 7 s $end
+$var reg 1 8 cout $end
+$upscope $end
+$upscope $end
+$scope module gen_rca(3) $end
+$scope module i_fa $end
+$var reg 1 9 x $end
+$var reg 1 : y $end
+$var reg 1 ; cin $end
+$var reg 1 < s $end
+$var reg 1 = cout $end
+$upscope $end
+$upscope $end
+$scope module gen_rca(4) $end
+$scope module i_fa $end
+$var reg 1 > x $end
+$var reg 1 ? y $end
+$var reg 1 @ cin $end
+$var reg 1 A s $end
+$var reg 1 B cout $end
+$upscope $end
+$upscope $end
+$scope module gen_rca(5) $end
+$scope module i_fa $end
+$var reg 1 C x $end
+$var reg 1 D y $end
+$var reg 1 E cin $end
+$var reg 1 F s $end
+$var reg 1 G cout $end
+$upscope $end
+$upscope $end
+$scope module gen_rca(6) $end
+$scope module i_fa $end
+$var reg 1 H x $end
+$var reg 1 I y $end
+$var reg 1 J cin $end
+$var reg 1 K s $end
+$var reg 1 L cout $end
+$upscope $end
+$upscope $end
+$scope module gen_rca(7) $end
+$scope module i_fa $end
+$var reg 1 M x $end
+$var reg 1 N y $end
+$var reg 1 O cin $end
+$var reg 1 P s $end
+$var reg 1 Q cout $end
+$upscope $end
+$upscope $end
+$scope module gen_rca(8) $end
+$scope module i_fa $end
+$var reg 1 R x $end
+$var reg 1 S y $end
+$var reg 1 T cin $end
+$var reg 1 U s $end
+$var reg 1 V cout $end
+$upscope $end
+$upscope $end
+$scope module gen_rca(9) $end
+$scope module i_fa $end
+$var reg 1 W x $end
+$var reg 1 X y $end
+$var reg 1 Y cin $end
+$var reg 1 Z s $end
+$var reg 1 [ cout $end
+$upscope $end
+$upscope $end
+$scope module gen_rca(10) $end
+$scope module i_fa $end
+$var reg 1 \ x $end
+$var reg 1 ] y $end
+$var reg 1 ^ cin $end
+$var reg 1 _ s $end
+$var reg 1 ` cout $end
+$upscope $end
+$upscope $end
+$scope module gen_rca(11) $end
+$scope module i_fa $end
+$var reg 1 a x $end
+$var reg 1 b y $end
+$var reg 1 c cin $end
+$var reg 1 d s $end
+$var reg 1 e cout $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+0!
+b000000000111 "
+b011110000111 #
+b000000000111 $
+b011110000111 %
+0&
+b011110001110 '
+0(
+b0000000001110 )
+1*
+1+
+0,
+0-
+1.
+1/
+10
+11
+12
+13
+14
+15
+16
+17
+18
+09
+0:
+1;
+1<
+0=
+0>
+0?
+0@
+0A
+0B
+0C
+0D
+0E
+0F
+0G
+0H
+0I
+0J
+0K
+0L
+0M
+1N
+0O
+1P
+0Q
+0R
+1S
+0T
+1U
+0V
+0W
+1X
+0Y
+1Z
+0[
+0\
+1]
+0^
+1_
+0`
+0a
+0b
+0c
+0d
+0e
+#50000000
+1!
+1&
+b011110001111 '
+b0000000001111 )
+1,
+1-
+#73000000
+b000000010001 "
+b000000010001 $
+b011110011001 '
+0/
+02
+04
+07
+1>
+1A
+#92000000
+b000011010111 "
+b000011010111 $
+b100001011111 '
+b0111100001111 )
+1/
+12
+14
+17
+1H
+1K
+1M
+0P
+1Q
+1T
+0U
+1V
+1Y
+0Z
+1[
+1^
+0_
+1`
+1c
+1d
+#192000000
+#204000000
+0!
+b000110011011 #
+b000110011011 %
+0&
+b001001110010 '
+b0001100111110 )
+0,
+0-
+05
+07
+1:
+0<
+1=
+1?
+1@
+1A
+1B
+1E
+1F
+0X
+1Z
+0[
+0]
+0^
+0_
+0`
+0c
+0d
+#208000000
+b000000000111 "
+b000000000111 $
+b000110100010 '
+b0000000111110 )
+0>
+0A
+0H
+0K
+0M
+1P
+0Q
+0T
+1U
+0V
+0Y
+0Z
+#248000000
+b111111110111 "
+b110111111111 #
+b111111110111 $
+b110111111111 %
+b110111110110 '
+1(
+b1111111111110 )
+15
+17
+1>
+1A
+1C
+1D
+1G
+1H
+1I
+1J
+1K
+1L
+1M
+1O
+1P
+1Q
+1R
+1T
+1U
+1V
+1W
+1Y
+0Z
+1[
+1\
+1]
+1^
+1_
+1`
+1a
+1b
+1c
+1d
+1e
+#338000000
+1!
+1&
+b110111110111 '
+b1111111111111 )
+1,
+1-
+#427000000
+b000110000111 "
+b010110011000 #
+b000110000111 $
+b010110011000 %
+b011100100000 '
+0(
+b0001100111111 )
+0+
+0-
+00
+02
+05
+07
+0>
+0A
+0C
+0D
+0G
+0H
+0I
+0J
+0K
+0L
+0O
+0P
+0W
+1Z
+0[
+0\
+0^
+1_
+0`
+0a
+0b
+0c
+0d
+0e
+#460000000

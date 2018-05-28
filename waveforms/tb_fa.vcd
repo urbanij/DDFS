@@ -1,0 +1,73 @@
+$date
+  Thu May 17 20:54:37 2018
+$end
+$version
+  GHDL v0
+$end
+$timescale
+  1 fs
+$end
+$var reg 1 ! a $end
+$var reg 1 " b $end
+$var reg 1 # c $end
+$scope module dut $end
+$var reg 1 $ x $end
+$var reg 1 % y $end
+$var reg 1 & cin $end
+$var reg 1 ' s $end
+$var reg 1 ( cout $end
+$upscope $end
+$enddefinitions $end
+#0
+0!
+0"
+0#
+0$
+0%
+0&
+0'
+0(
+#20000000
+1"
+1%
+1'
+#40000000
+1!
+0"
+1$
+0%
+#60000000
+0!
+1#
+0$
+1&
+#80000000
+1!
+1"
+0#
+1$
+1%
+0&
+0'
+1(
+#100000000
+0!
+1#
+0$
+1&
+#120000000
+1!
+1$
+1'
+#140000000
+0"
+0#
+0%
+0&
+0(
+#160000000
+0!
+1#
+0$
+1&
+#180000000

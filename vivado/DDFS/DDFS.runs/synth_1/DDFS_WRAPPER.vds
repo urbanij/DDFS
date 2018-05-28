@@ -1,0 +1,352 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Thu May 24 16:21:26 2018
+# Process ID: 2672
+# Current directory: C:/Users/fu/Dropbox/UNI/MASTER/1M/PSM/DIGITALE/2018_vhdl/2-DDFS/vivado/DDFS/DDFS.runs/synth_1
+# Command line: vivado.exe -log DDFS_WRAPPER.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source DDFS_WRAPPER.tcl
+# Log file: C:/Users/fu/Dropbox/UNI/MASTER/1M/PSM/DIGITALE/2018_vhdl/2-DDFS/vivado/DDFS/DDFS.runs/synth_1/DDFS_WRAPPER.vds
+# Journal file: C:/Users/fu/Dropbox/UNI/MASTER/1M/PSM/DIGITALE/2018_vhdl/2-DDFS/vivado/DDFS/DDFS.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source DDFS_WRAPPER.tcl -notrace
+Command: synth_design -top DDFS_WRAPPER -part xc7z010clg400-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 6492 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 283.375 ; gain = 73.918
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'DDFS_WRAPPER' [C:/Users/fu/Dropbox/UNI/MASTER/1M/PSM/DIGITALE/2018_vhdl/2-DDFS/src/DDFS_wrapper.vhd:32]
+INFO: [Synth 8-3491] module 'DDFS' declared at 'C:/Users/fu/Dropbox/UNI/MASTER/1M/PSM/DIGITALE/2018_vhdl/2-DDFS/src/DDFS.vhd:22' bound to instance 'i_DDFS' of component 'DDFS' [C:/Users/fu/Dropbox/UNI/MASTER/1M/PSM/DIGITALE/2018_vhdl/2-DDFS/src/DDFS_wrapper.vhd:50]
+INFO: [Synth 8-638] synthesizing module 'DDFS' [C:/Users/fu/Dropbox/UNI/MASTER/1M/PSM/DIGITALE/2018_vhdl/2-DDFS/src/DDFS.vhd:37]
+	Parameter N bound to: 12 - type: integer 
+	Parameter M bound to: 6 - type: integer 
+	Parameter N bound to: 12 - type: integer 
+INFO: [Synth 8-3491] module 'PhaseAccumulator' declared at 'C:/Users/fu/Dropbox/UNI/MASTER/1M/PSM/DIGITALE/2018_vhdl/2-DDFS/src/PhaseAccumulator.vhd:24' bound to instance 'i_PA' of component 'PhaseAccumulator' [C:/Users/fu/Dropbox/UNI/MASTER/1M/PSM/DIGITALE/2018_vhdl/2-DDFS/src/DDFS.vhd:64]
+INFO: [Synth 8-638] synthesizing module 'PhaseAccumulator' [C:/Users/fu/Dropbox/UNI/MASTER/1M/PSM/DIGITALE/2018_vhdl/2-DDFS/src/PhaseAccumulator.vhd:40]
+	Parameter N bound to: 12 - type: integer 
+	Parameter N bound to: 12 - type: integer 
+INFO: [Synth 8-3491] module 'rca' declared at 'C:/Users/fu/Dropbox/UNI/MASTER/1M/PSM/DIGITALE/2018_vhdl/2-DDFS/src/rca.vhd:23' bound to instance 'i_adder' of component 'rca' [C:/Users/fu/Dropbox/UNI/MASTER/1M/PSM/DIGITALE/2018_vhdl/2-DDFS/src/PhaseAccumulator.vhd:82]
+INFO: [Synth 8-638] synthesizing module 'rca' [C:/Users/fu/Dropbox/UNI/MASTER/1M/PSM/DIGITALE/2018_vhdl/2-DDFS/src/rca.vhd:40]
+	Parameter N bound to: 12 - type: integer 
+INFO: [Synth 8-3491] module 'fa' declared at 'C:/Users/fu/Dropbox/UNI/MASTER/1M/PSM/DIGITALE/2018_vhdl/2-DDFS/src/fa.vhd:22' bound to instance 'i_fa' of component 'fa' [C:/Users/fu/Dropbox/UNI/MASTER/1M/PSM/DIGITALE/2018_vhdl/2-DDFS/src/rca.vhd:70]
+INFO: [Synth 8-638] synthesizing module 'fa' [C:/Users/fu/Dropbox/UNI/MASTER/1M/PSM/DIGITALE/2018_vhdl/2-DDFS/src/fa.vhd:29]
+INFO: [Synth 8-256] done synthesizing module 'fa' (1#1) [C:/Users/fu/Dropbox/UNI/MASTER/1M/PSM/DIGITALE/2018_vhdl/2-DDFS/src/fa.vhd:29]
+INFO: [Synth 8-3491] module 'fa' declared at 'C:/Users/fu/Dropbox/UNI/MASTER/1M/PSM/DIGITALE/2018_vhdl/2-DDFS/src/fa.vhd:22' bound to instance 'i_fa' of component 'fa' [C:/Users/fu/Dropbox/UNI/MASTER/1M/PSM/DIGITALE/2018_vhdl/2-DDFS/src/rca.vhd:70]
+INFO: [Synth 8-3491] module 'fa' declared at 'C:/Users/fu/Dropbox/UNI/MASTER/1M/PSM/DIGITALE/2018_vhdl/2-DDFS/src/fa.vhd:22' bound to instance 'i_fa' of component 'fa' [C:/Users/fu/Dropbox/UNI/MASTER/1M/PSM/DIGITALE/2018_vhdl/2-DDFS/src/rca.vhd:70]
+INFO: [Synth 8-3491] module 'fa' declared at 'C:/Users/fu/Dropbox/UNI/MASTER/1M/PSM/DIGITALE/2018_vhdl/2-DDFS/src/fa.vhd:22' bound to instance 'i_fa' of component 'fa' [C:/Users/fu/Dropbox/UNI/MASTER/1M/PSM/DIGITALE/2018_vhdl/2-DDFS/src/rca.vhd:70]
+INFO: [Synth 8-3491] module 'fa' declared at 'C:/Users/fu/Dropbox/UNI/MASTER/1M/PSM/DIGITALE/2018_vhdl/2-DDFS/src/fa.vhd:22' bound to instance 'i_fa' of component 'fa' [C:/Users/fu/Dropbox/UNI/MASTER/1M/PSM/DIGITALE/2018_vhdl/2-DDFS/src/rca.vhd:70]
+INFO: [Synth 8-3491] module 'fa' declared at 'C:/Users/fu/Dropbox/UNI/MASTER/1M/PSM/DIGITALE/2018_vhdl/2-DDFS/src/fa.vhd:22' bound to instance 'i_fa' of component 'fa' [C:/Users/fu/Dropbox/UNI/MASTER/1M/PSM/DIGITALE/2018_vhdl/2-DDFS/src/rca.vhd:70]
+INFO: [Synth 8-3491] module 'fa' declared at 'C:/Users/fu/Dropbox/UNI/MASTER/1M/PSM/DIGITALE/2018_vhdl/2-DDFS/src/fa.vhd:22' bound to instance 'i_fa' of component 'fa' [C:/Users/fu/Dropbox/UNI/MASTER/1M/PSM/DIGITALE/2018_vhdl/2-DDFS/src/rca.vhd:70]
+INFO: [Synth 8-3491] module 'fa' declared at 'C:/Users/fu/Dropbox/UNI/MASTER/1M/PSM/DIGITALE/2018_vhdl/2-DDFS/src/fa.vhd:22' bound to instance 'i_fa' of component 'fa' [C:/Users/fu/Dropbox/UNI/MASTER/1M/PSM/DIGITALE/2018_vhdl/2-DDFS/src/rca.vhd:70]
+INFO: [Synth 8-3491] module 'fa' declared at 'C:/Users/fu/Dropbox/UNI/MASTER/1M/PSM/DIGITALE/2018_vhdl/2-DDFS/src/fa.vhd:22' bound to instance 'i_fa' of component 'fa' [C:/Users/fu/Dropbox/UNI/MASTER/1M/PSM/DIGITALE/2018_vhdl/2-DDFS/src/rca.vhd:70]
+INFO: [Synth 8-3491] module 'fa' declared at 'C:/Users/fu/Dropbox/UNI/MASTER/1M/PSM/DIGITALE/2018_vhdl/2-DDFS/src/fa.vhd:22' bound to instance 'i_fa' of component 'fa' [C:/Users/fu/Dropbox/UNI/MASTER/1M/PSM/DIGITALE/2018_vhdl/2-DDFS/src/rca.vhd:70]
+INFO: [Synth 8-3491] module 'fa' declared at 'C:/Users/fu/Dropbox/UNI/MASTER/1M/PSM/DIGITALE/2018_vhdl/2-DDFS/src/fa.vhd:22' bound to instance 'i_fa' of component 'fa' [C:/Users/fu/Dropbox/UNI/MASTER/1M/PSM/DIGITALE/2018_vhdl/2-DDFS/src/rca.vhd:70]
+INFO: [Synth 8-3491] module 'fa' declared at 'C:/Users/fu/Dropbox/UNI/MASTER/1M/PSM/DIGITALE/2018_vhdl/2-DDFS/src/fa.vhd:22' bound to instance 'i_fa' of component 'fa' [C:/Users/fu/Dropbox/UNI/MASTER/1M/PSM/DIGITALE/2018_vhdl/2-DDFS/src/rca.vhd:70]
+INFO: [Synth 8-256] done synthesizing module 'rca' (2#1) [C:/Users/fu/Dropbox/UNI/MASTER/1M/PSM/DIGITALE/2018_vhdl/2-DDFS/src/rca.vhd:40]
+	Parameter N bound to: 12 - type: integer 
+INFO: [Synth 8-3491] module 'reg' declared at 'C:/Users/fu/Dropbox/UNI/MASTER/1M/PSM/DIGITALE/2018_vhdl/2-DDFS/src/reg.vhd:20' bound to instance 'i_reg' of component 'reg' [C:/Users/fu/Dropbox/UNI/MASTER/1M/PSM/DIGITALE/2018_vhdl/2-DDFS/src/PhaseAccumulator.vhd:87]
+INFO: [Synth 8-638] synthesizing module '\reg ' [C:/Users/fu/Dropbox/UNI/MASTER/1M/PSM/DIGITALE/2018_vhdl/2-DDFS/src/reg.vhd:31]
+	Parameter N bound to: 12 - type: integer 
+INFO: [Synth 8-3491] module 'dff' declared at 'C:/Users/fu/Dropbox/UNI/MASTER/1M/PSM/DIGITALE/2018_vhdl/2-DDFS/src/dff.vhd:22' bound to instance 'i_dff' of component 'dff' [C:/Users/fu/Dropbox/UNI/MASTER/1M/PSM/DIGITALE/2018_vhdl/2-DDFS/src/reg.vhd:45]
+INFO: [Synth 8-638] synthesizing module 'dff' [C:/Users/fu/Dropbox/UNI/MASTER/1M/PSM/DIGITALE/2018_vhdl/2-DDFS/src/dff.vhd:34]
+INFO: [Synth 8-256] done synthesizing module 'dff' (3#1) [C:/Users/fu/Dropbox/UNI/MASTER/1M/PSM/DIGITALE/2018_vhdl/2-DDFS/src/dff.vhd:34]
+INFO: [Synth 8-3491] module 'dff' declared at 'C:/Users/fu/Dropbox/UNI/MASTER/1M/PSM/DIGITALE/2018_vhdl/2-DDFS/src/dff.vhd:22' bound to instance 'i_dff' of component 'dff' [C:/Users/fu/Dropbox/UNI/MASTER/1M/PSM/DIGITALE/2018_vhdl/2-DDFS/src/reg.vhd:45]
+INFO: [Synth 8-3491] module 'dff' declared at 'C:/Users/fu/Dropbox/UNI/MASTER/1M/PSM/DIGITALE/2018_vhdl/2-DDFS/src/dff.vhd:22' bound to instance 'i_dff' of component 'dff' [C:/Users/fu/Dropbox/UNI/MASTER/1M/PSM/DIGITALE/2018_vhdl/2-DDFS/src/reg.vhd:45]
+INFO: [Synth 8-3491] module 'dff' declared at 'C:/Users/fu/Dropbox/UNI/MASTER/1M/PSM/DIGITALE/2018_vhdl/2-DDFS/src/dff.vhd:22' bound to instance 'i_dff' of component 'dff' [C:/Users/fu/Dropbox/UNI/MASTER/1M/PSM/DIGITALE/2018_vhdl/2-DDFS/src/reg.vhd:45]
+INFO: [Synth 8-3491] module 'dff' declared at 'C:/Users/fu/Dropbox/UNI/MASTER/1M/PSM/DIGITALE/2018_vhdl/2-DDFS/src/dff.vhd:22' bound to instance 'i_dff' of component 'dff' [C:/Users/fu/Dropbox/UNI/MASTER/1M/PSM/DIGITALE/2018_vhdl/2-DDFS/src/reg.vhd:45]
+INFO: [Synth 8-3491] module 'dff' declared at 'C:/Users/fu/Dropbox/UNI/MASTER/1M/PSM/DIGITALE/2018_vhdl/2-DDFS/src/dff.vhd:22' bound to instance 'i_dff' of component 'dff' [C:/Users/fu/Dropbox/UNI/MASTER/1M/PSM/DIGITALE/2018_vhdl/2-DDFS/src/reg.vhd:45]
+INFO: [Synth 8-3491] module 'dff' declared at 'C:/Users/fu/Dropbox/UNI/MASTER/1M/PSM/DIGITALE/2018_vhdl/2-DDFS/src/dff.vhd:22' bound to instance 'i_dff' of component 'dff' [C:/Users/fu/Dropbox/UNI/MASTER/1M/PSM/DIGITALE/2018_vhdl/2-DDFS/src/reg.vhd:45]
+INFO: [Synth 8-3491] module 'dff' declared at 'C:/Users/fu/Dropbox/UNI/MASTER/1M/PSM/DIGITALE/2018_vhdl/2-DDFS/src/dff.vhd:22' bound to instance 'i_dff' of component 'dff' [C:/Users/fu/Dropbox/UNI/MASTER/1M/PSM/DIGITALE/2018_vhdl/2-DDFS/src/reg.vhd:45]
+INFO: [Synth 8-3491] module 'dff' declared at 'C:/Users/fu/Dropbox/UNI/MASTER/1M/PSM/DIGITALE/2018_vhdl/2-DDFS/src/dff.vhd:22' bound to instance 'i_dff' of component 'dff' [C:/Users/fu/Dropbox/UNI/MASTER/1M/PSM/DIGITALE/2018_vhdl/2-DDFS/src/reg.vhd:45]
+INFO: [Synth 8-3491] module 'dff' declared at 'C:/Users/fu/Dropbox/UNI/MASTER/1M/PSM/DIGITALE/2018_vhdl/2-DDFS/src/dff.vhd:22' bound to instance 'i_dff' of component 'dff' [C:/Users/fu/Dropbox/UNI/MASTER/1M/PSM/DIGITALE/2018_vhdl/2-DDFS/src/reg.vhd:45]
+INFO: [Synth 8-3491] module 'dff' declared at 'C:/Users/fu/Dropbox/UNI/MASTER/1M/PSM/DIGITALE/2018_vhdl/2-DDFS/src/dff.vhd:22' bound to instance 'i_dff' of component 'dff' [C:/Users/fu/Dropbox/UNI/MASTER/1M/PSM/DIGITALE/2018_vhdl/2-DDFS/src/reg.vhd:45]
+INFO: [Synth 8-3491] module 'dff' declared at 'C:/Users/fu/Dropbox/UNI/MASTER/1M/PSM/DIGITALE/2018_vhdl/2-DDFS/src/dff.vhd:22' bound to instance 'i_dff' of component 'dff' [C:/Users/fu/Dropbox/UNI/MASTER/1M/PSM/DIGITALE/2018_vhdl/2-DDFS/src/reg.vhd:45]
+INFO: [Synth 8-256] done synthesizing module '\reg ' (4#1) [C:/Users/fu/Dropbox/UNI/MASTER/1M/PSM/DIGITALE/2018_vhdl/2-DDFS/src/reg.vhd:31]
+INFO: [Synth 8-256] done synthesizing module 'PhaseAccumulator' (5#1) [C:/Users/fu/Dropbox/UNI/MASTER/1M/PSM/DIGITALE/2018_vhdl/2-DDFS/src/PhaseAccumulator.vhd:40]
+INFO: [Synth 8-3491] module 'LUT_DDFS' declared at 'C:/Users/fu/Dropbox/UNI/MASTER/1M/PSM/DIGITALE/2018_vhdl/2-DDFS/src/LUT_DDFS_SG_4096x6.vhd:32' bound to instance 'i_LUT' of component 'LUT_DDFS' [C:/Users/fu/Dropbox/UNI/MASTER/1M/PSM/DIGITALE/2018_vhdl/2-DDFS/src/DDFS.vhd:68]
+INFO: [Synth 8-638] synthesizing module 'LUT_DDFS' [C:/Users/fu/Dropbox/UNI/MASTER/1M/PSM/DIGITALE/2018_vhdl/2-DDFS/src/LUT_DDFS_SG_4096x6.vhd:39]
+INFO: [Synth 8-256] done synthesizing module 'LUT_DDFS' (6#1) [C:/Users/fu/Dropbox/UNI/MASTER/1M/PSM/DIGITALE/2018_vhdl/2-DDFS/src/LUT_DDFS_SG_4096x6.vhd:39]
+INFO: [Synth 8-256] done synthesizing module 'DDFS' (7#1) [C:/Users/fu/Dropbox/UNI/MASTER/1M/PSM/DIGITALE/2018_vhdl/2-DDFS/src/DDFS.vhd:37]
+INFO: [Synth 8-256] done synthesizing module 'DDFS_WRAPPER' (8#1) [C:/Users/fu/Dropbox/UNI/MASTER/1M/PSM/DIGITALE/2018_vhdl/2-DDFS/src/DDFS_wrapper.vhd:32]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 322.262 ; gain = 112.805
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 322.262 ; gain = 112.805
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/fu/Dropbox/UNI/MASTER/1M/PSM/DIGITALE/2018_vhdl/2-DDFS/vivado/DDFS/DDFS.srcs/constrs_1/new/DDFS_Zybo_constraints.xdc]
+INFO: [Vivado 12-2286] Implicit search of objects for pattern 'clk' matched to 'port' objects. [C:/Users/fu/Dropbox/UNI/MASTER/1M/PSM/DIGITALE/2018_vhdl/2-DDFS/vivado/DDFS/DDFS.srcs/constrs_1/new/DDFS_Zybo_constraints.xdc:1]
+Resolution: To avoid ambiguous patterns, provide proper objects using get commands e.g. [get_nets xyz].
+Finished Parsing XDC File [C:/Users/fu/Dropbox/UNI/MASTER/1M/PSM/DIGITALE/2018_vhdl/2-DDFS/vivado/DDFS/DDFS.srcs/constrs_1/new/DDFS_Zybo_constraints.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/fu/Dropbox/UNI/MASTER/1M/PSM/DIGITALE/2018_vhdl/2-DDFS/vivado/DDFS/DDFS.srcs/constrs_1/new/DDFS_Zybo_constraints.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/DDFS_WRAPPER_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/DDFS_WRAPPER_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.015 . Memory (MB): peak = 626.531 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 626.531 ; gain = 417.074
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z010clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 626.531 ; gain = 417.074
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 626.531 ; gain = 417.074
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 626.531 ; gain = 417.074
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---XORs : 
+	   3 Input      1 Bit         XORs := 12    
++---Registers : 
+	                1 Bit    Registers := 12    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module fa 
+Detailed RTL Component Info : 
++---XORs : 
+	   3 Input      1 Bit         XORs := 1     
+Module dff 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:25 ; elapsed = 00:00:28 . Memory (MB): peak = 626.531 ; gain = 417.074
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++-------------+---------------------+---------------+----------------+
+|Module Name  | RTL Object          | Depth x Width | Implemented As | 
++-------------+---------------------+---------------+----------------+
+|LUT_DDFS     | LUT[0]              | 4096x6        | LUT            | 
+|DDFS_WRAPPER | i_DDFS/i_LUT/LUT[0] | 4096x6        | LUT            | 
++-------------+---------------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:37 ; elapsed = 00:00:40 . Memory (MB): peak = 626.531 ; gain = 417.074
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:37 ; elapsed = 00:00:40 . Memory (MB): peak = 626.531 ; gain = 417.074
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:37 ; elapsed = 00:00:40 . Memory (MB): peak = 626.531 ; gain = 417.074
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:38 ; elapsed = 00:00:41 . Memory (MB): peak = 626.531 ; gain = 417.074
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:38 ; elapsed = 00:00:41 . Memory (MB): peak = 626.531 ; gain = 417.074
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:38 ; elapsed = 00:00:41 . Memory (MB): peak = 626.531 ; gain = 417.074
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:38 ; elapsed = 00:00:41 . Memory (MB): peak = 626.531 ; gain = 417.074
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:38 ; elapsed = 00:00:41 . Memory (MB): peak = 626.531 ; gain = 417.074
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:38 ; elapsed = 00:00:41 . Memory (MB): peak = 626.531 ; gain = 417.074
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+------+------+
+|      |Cell  |Count |
++------+------+------+
+|1     |BUFG  |     1|
+|2     |LUT2  |     2|
+|3     |LUT3  |     7|
+|4     |LUT4  |    15|
+|5     |LUT5  |    24|
+|6     |LUT6  |    90|
+|7     |MUXF7 |    15|
+|8     |MUXF8 |     2|
+|9     |FDCE  |    12|
+|10    |IBUF  |     6|
+|11    |OBUF  |    10|
++------+------+------+
+
+Report Instance Areas: 
++------+----------------------------+-----------------+------+
+|      |Instance                    |Module           |Cells |
++------+----------------------------+-----------------+------+
+|1     |top                         |                 |   184|
+|2     |  i_DDFS                    |DDFS             |   167|
+|3     |    i_LUT                   |LUT_DDFS         |   140|
+|4     |    i_PA                    |PhaseAccumulator |    27|
+|5     |      i_reg                 |\reg             |    27|
+|6     |        \reg_gen[0].i_dff   |dff              |     2|
+|7     |        \reg_gen[10].i_dff  |dff_0            |     1|
+|8     |        \reg_gen[11].i_dff  |dff_1            |     1|
+|9     |        \reg_gen[1].i_dff   |dff_2            |     2|
+|10    |        \reg_gen[2].i_dff   |dff_3            |     4|
+|11    |        \reg_gen[3].i_dff   |dff_4            |     3|
+|12    |        \reg_gen[4].i_dff   |dff_5            |     2|
+|13    |        \reg_gen[5].i_dff   |dff_6            |     1|
+|14    |        \reg_gen[6].i_dff   |dff_7            |     4|
+|15    |        \reg_gen[7].i_dff   |dff_8            |     3|
+|16    |        \reg_gen[8].i_dff   |dff_9            |     2|
+|17    |        \reg_gen[9].i_dff   |dff_10           |     2|
++------+----------------------------+-----------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:38 ; elapsed = 00:00:41 . Memory (MB): peak = 626.531 ; gain = 417.074
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:23 ; elapsed = 00:00:30 . Memory (MB): peak = 626.531 ; gain = 112.734
+Synthesis Optimization Complete : Time (s): cpu = 00:00:38 ; elapsed = 00:00:41 . Memory (MB): peak = 626.531 ; gain = 417.074
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 6 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+66 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 626.531 ; gain = 417.074
+INFO: [Common 17-1381] The checkpoint 'C:/Users/fu/Dropbox/UNI/MASTER/1M/PSM/DIGITALE/2018_vhdl/2-DDFS/vivado/DDFS/DDFS.runs/synth_1/DDFS_WRAPPER.dcp' has been generated.
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.015 . Memory (MB): peak = 626.531 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Thu May 24 16:22:10 2018...

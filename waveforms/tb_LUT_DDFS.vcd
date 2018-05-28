@@ -1,0 +1,35 @@
+$date
+  Thu May 17 20:54:39 2018
+$end
+$version
+  GHDL v0
+$end
+$timescale
+  1 fs
+$end
+$var reg 12 ! lut_in[11:0] $end
+$scope module dut $end
+$var reg 12 " lut_line[11:0] $end
+$var reg 6 # lut_data[5:0] $end
+$upscope $end
+$enddefinitions $end
+#0
+b000000000000 !
+b000000000000 "
+b000000 #
+#10000000
+b000100010011 !
+b000100010011 "
+b001100 #
+#30000000
+b000101010011 !
+b000101010011 "
+b001111 #
+#50000000
+b000101011011 !
+b000101011011 "
+#70000000
+b000100011111 !
+b000100011111 "
+b001101 #
+#200000000
