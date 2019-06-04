@@ -20,7 +20,7 @@ h_q = round(h/lsb_amplitude); % Quantized sine values.
 
 
 if (LUT_INTEGER_FLAG)
-    plot(h_q); % it plots h_q 
+    plot(h_q); % it plots h_q
     grid on;   % it shows the grid
     fileID = fopen('int_lut.txt','w');        %It opens a file named 'int_lut.txt' to contain the data.
     fprintf(fileID, '%d,\n', h_q(1 : 2^N-1)); %It writes the integer values separated by ",\n".
@@ -33,13 +33,12 @@ else
     plot(h_q,'b');                     % it plots the 2-complemented h_q using the blue color
     grid on;
     fileID = fopen('binary_lut.txt','w'); % It opens a file named 'binary_lut.txt' to contain the data.
-   
+
     for i = 1 : 2^N - 1
         fprintf(fileID,'"%s",\n', dec2bin(h_q(i),   M));   % Each value is converted in binary notation, using a M-bit representation, and printed to the file, separed by ',\n' and between "".
     end
         fprintf(fileID,'"%s"\n',  dec2bin(h_q(2^N), M)); % The last value is converted in binary, using a M-bit representation,and printed to the file separed by '\n' and between "".
-  
-    fclose(fileID);
-    
-end
 
+    fclose(fileID);
+
+end

@@ -24,6 +24,7 @@ entity DDFS_WRAPPER is
 		fw      : in  std_logic_vector( 3 downto 0); -- W13 P15 G15
 		led     : out std_logic_vector( 3 downto 0); -- M14 M15 G14
 		yq      : out std_logic_vector( 5 downto 0)  -- F20 H20 J19 L19 N20 H18
+                                                     -- (https://reference.digilentinc.com/_media/reference/programmable-logic/zybo/zybo_rm.pdf , page 17)
 	);
 end DDFS_WRAPPER;
 
