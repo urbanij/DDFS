@@ -1,0 +1,50 @@
+[*]
+[*] GTKWave Analyzer v3.3.103 (w)1999-2019 BSI
+[*] Fri Oct 16 08:13:57 2020
+[*]
+[dumpfile] "/Users/fran/Dropbox/UNI/MASTER/2M/PSD/Quartus_projects/DDFS/v/ddfs_tb.vcd"
+[dumpfile_mtime] "Fri Jan 18 13:25:27 2019"
+[dumpfile_size] 1521740
+[savefile] "/Users/fran/Dropbox/UNI/MASTER/2M/PSD/Quartus_projects/DDFS/v/ddfs_tb.gtkw"
+[timestart] 0
+[size] 1915 1102
+[pos] -1 -1
+*-13.000855 15696 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] ddfs_tb.
+[treeopen] ddfs_tb.ddfs.
+[sst_width] 197
+[signals_width] 202
+[sst_expanded] 1
+[sst_vpaned_height] 552
+@28
+ddfs_tb.ddfs.clk
+ddfs_tb.ddfs.clk_div_wire
+ddfs_tb.ddfs.rst_n
+@8028
+ddfs_tb.ddfs.led
+@28
+ddfs_tb.ddfs.clk
+ddfs_tb.ddfs.clk_div_wire
+ddfs_tb.ddfs.led
+ddfs_tb.ddfs.rst_n
+@8022
+ddfs_tb.ddfs.pa_to_lut_wire[7:0]
+@20000
+-
+-
+@20001
+-
+@20000
+-
+-
+@8022
+ddfs_tb.ddfs.sine[3:0]
+@20000
+-
+-
+-
+-
+-
+-
+[pattern_trace] 1
+[pattern_trace] 0

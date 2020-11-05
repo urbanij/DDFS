@@ -1,0 +1,85 @@
+//////////////////////////////////////////////
+// Project Name:     DDFS verilog
+//                   
+// Group:            
+// Author(s):        Francesco Urbani
+// 
+// Create Date:      Sat Jan 12 19:19:30 CET 2019
+// Design Name: 
+// Module Name:      ddfs
+// Target Devices:   Intel MAX10 10M50DAF484C7G
+// Tool versions: 
+// Description:      
+//
+//
+// Revision:
+//////////////////////////////////////////////
+
+// synopsys translate_off
+`include "lut_ddfs.v"
+`include "clk_div.v"
+// `include "pa.v"
+// synopsys translate_on
+
+
+module ddfs
+#(
+    parameter      BIT_COUNT = 21,
+    parameter      N = 9,
+    parameter      M = 10
+)
+(
+    input [N-1:0]  fw,
+    input          clk,
+    input          rst_n,
+    output [M-1:0] sine,
+    output         led
+);
+
+
+// intermediate wires //
+wire  [N-1:0]     pa_to_lut_wire;
+wire              clk_div_wire;
+
+// instances //
+
+clk_div #(
+    .N(BIT_COUNT),
+    .M(1)
+)
+clkdiv
+(
+    .fw (fw),
+    .clk (clk),
+    .rst_n(rst_n),
+    .sine(clk_div_wire)
+);
+
+
+
+pa  #(.NBIT(N)) 
+    phase_acc 
+    (
+    .clk    (clk_div_wire),
+    .rst_n  (rst_n),
+    .pa_in  (fw),
+    .pa_out (pa_to_lut_wire)
+    );
+
+
+
+
+
+lut_ddfs #(
+        .N(N),
+        .M(M)
+    )
+    mylut
+    (
+        .lut_line (pa_to_lut_wire),
+        .lut_data (sine)
+    );
+
+assign led = sine[M-1]; 
+
+endmodule

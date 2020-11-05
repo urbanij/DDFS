@@ -1,0 +1,23 @@
+db
+output_files
+incremental_db
+*.ino
+
+
+#### QUARTUS STUFF below:
+
+# quartus project file
+*.qpf
+
+# pin assignment
+*.qsf
+
+# ??
+*.qws
+*.qdf
+*.rpt
+
+
+
+
+simulation

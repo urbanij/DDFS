@@ -1,4 +1,5 @@
 .DS_Store
-.work/
 
-vivado/
+build
+
+Script_for_lut.m

@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 
 # File         : LUT_generation.py
-# Author       : francescourbani
+# Author       : Francesco Urbani
 # Created      : Thu May 10 07:36:29 CEST 2018
 # Last update  : 
 # Description  : Script for VHDL design LUT
